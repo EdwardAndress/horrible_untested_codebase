@@ -2,7 +2,7 @@ class Calculator
 
   def initialize(printer = Printer.new, memory = Memory.new)
     @printer = printer
-    @memory = Memory.new
+    @memory  = memory
   end
 
   def add(number1, number2, save = false)
