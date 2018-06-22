@@ -1,49 +1,29 @@
 class Calculator
-
-  def initialize(printer = Printer.new, memory = Memory.new)
-    @printer = printer
-    @memory  = memory
+  def add(number1, number2)
+    number1 + number2
   end
 
-  def add(number1, number2, save = false)
-    answer = number1 + number2
-    @memory.save(answer) if save
-    @printer.prettify(answer)
+  def subtract(number1, number2)
+    number1 - number2
   end
 
-  def subtract(number1, number2, save = false)
-    answer = number1 - number2
-    @memory.save(answer) if save
-    @printer.prettify(answer)
+  def divide(dividend, divisor)
+    dividend / divisor
   end
 
-  def divide(dividend, divisor, save = false)
-    answer = dividend / divisor
-    @memory.save(answer) if save
-    @printer.prettify(answer)
+  def multiply(number1, number2)
+    number1 * number2
   end
 
-  def multiply(number1, number2, save = false)
-    answer = number1 * number2
-    @memory.save(answer) if save
-    @printer.prettify(answer)
+  def square(number)
+    number * number
   end
 
-  def square(number, save = false)
-    answer = number * number
-    @memory.save(answer) if save
-    @printer.prettify(answer)
+  def cube(number)
+    number * number * number
   end
 
-  def cube(number, save = false)
-    answer = number * number * number
-    @memory.save(answer) if save
-    @printer.prettify(answer)
-  end
-
-  def square_root(number, save = false)
-    answer = Math.sqrt(number)
-    @memory.save(answer) if save
-    @printer.prettify(answer)
+  def square_root(number)
+    Math.sqrt(number)
   end
 end
