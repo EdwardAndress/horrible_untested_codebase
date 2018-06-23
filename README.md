@@ -14,7 +14,7 @@ We have had several planning session before you started and identified three pie
 
 Your first job is to add tests and, to do that, you'll need to work out what needs to be tested.  We expect 100% test coverage by the time you're done.
 
-Your second job is to integrate the three classes.  Please continue to use TDD here and write the tests first.
+Your second job is to integrate the three classes.  Please continue to use TDD here and write the tests first.  We want the `Calculator` to store answers in the `Memory` and output via the `Printer`, but the user should only have to interact with the `Calculator`.
 
 Your third job is to add a new feature, using the Memory class, that allows users of the 'calculator' to do arithmetic using values stored in memory.
 
