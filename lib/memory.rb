@@ -20,7 +20,7 @@ class Memory
   end
 
   def allocate_space
-    [*1...CAPACITY].map {|location| nil }
+    [*1..CAPACITY].map {|location| nil }
   end
 
   def available_space?
